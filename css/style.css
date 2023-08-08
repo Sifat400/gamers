@@ -116,6 +116,17 @@ body {
   font-weight: 700;
   line-height: 3.75rem;
 }
+.violet-heading {
+  color: var(--secondary);
+}
+.content-p {
+  color: var(--ternary);
+  font-size: 18px;
+  line-height: 30px;
+}
+section {
+  padding: 3rem 0;
+}
 
 /* Nav Section Start */
 nav {
@@ -152,7 +163,6 @@ nav .menu ul a {
 .menu ul .follow-us i {
   width: 20px;
 }
-
 /* Nav Section End */
 
 /* Banner Section Starts */
@@ -185,3 +195,23 @@ section.banner .banner-content button {
 section.banner .banner-img img {
   height: 450px;
 }
+/* Banner Section Starts */
+
+/* Section Play-Game Starts */
+section.play-game .play-game-wrapper .play-game-img {
+  position: relative;
+}
+section.play-game .play-game-wrapper .play-game-img img:first-child {
+  width: 90%;
+}
+section.play-game .play-game-wrapper .play-game-img img:last-child {
+  width: 50%;
+  position: absolute;
+  bottom: -100px;
+  right: -40px;
+}
+
+section.play-game .play-game-wrapper .play-game-content {
+  margin-left: 150px;
+}
+/* Section Play-Game End */
