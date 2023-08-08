@@ -1,0 +1,187 @@
+/* fonts */
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800&display=swap");
+
+/* colors */
+:root {
+  --primary: #ff42a5;
+  --secondary: #c85ad2;
+  --ternary: #534c64;
+  --dark: #3c354f;
+  --peace: #4ec5f7;
+  --pure: #fefefe;
+  --light: #f0f0f0;
+  --heaven: #ffffff;
+  --footer: #0b0223;
+}
+
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+}
+
+.container {
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+/* media queries start */
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1152px;
+  }
+}
+/* media queries end */
+
+/* Utility Classes */
+.flex {
+  display: flex;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.justify-center {
+  justify-content: center;
+}
+.items-center {
+  align-items: center;
+}
+.flex-1 {
+  flex: 1;
+}
+
+.btn {
+  padding: 20px 40px;
+  border-radius: 48px;
+  line-height: 0.8;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+}
+.btn-primary {
+  background-color: var(--primary);
+  color: var(--heaven);
+}
+.btn-primary:hover {
+  background-color: var(--heaven);
+  color: var(--primary);
+  border: 1px solid var(--primary);
+}
+.btn-secondary {
+  background-color: var(--secondary);
+  color: var(--heaven);
+}
+.btn-secondary:hover {
+  background-color: var(--heaven);
+  color: var(--secondary);
+  border: 1px solid var(--secondary);
+}
+
+.align-left {
+  text-align: left;
+}
+.align-center {
+  text-align: center;
+}
+.align-right {
+  text-align: right;
+}
+
+.section-heading {
+  position: relative;
+  margin-bottom: 2rem;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 3.75rem;
+}
+
+/* Nav Section Start */
+nav {
+  height: 80px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+nav .logo h3 {
+  text-align: center;
+  font-size: 45px;
+  font-weight: 700;
+  margin-left: 20px;
+}
+nav .logo h3 span {
+  color: var(--primary);
+}
+nav .menu {
+  font-size: 18px;
+  font-weight: 500;
+}
+nav .menu ul {
+  list-style: none;
+  gap: 2rem;
+}
+nav .menu ul a {
+  text-decoration: none;
+  color: var(--dark);
+}
+
+.menu ul .follow-us {
+  border-radius: 8px;
+  background: rgba(11, 2, 35, 0.1);
+  padding: 15px 20px;
+}
+.menu ul .follow-us i {
+  width: 20px;
+}
+
+/* Nav Section End */
+
+/* Banner Section Starts */
+section.banner {
+  background-image: url("../images/Group14.png");
+  background-size: 50%;
+  background-repeat: no-repeat;
+}
+section.banner .banner-content {
+  width: 50%;
+  background-size: cover;
+}
+section.banner .banner-content h3 {
+  color: var(--footer);
+  font-size: 3rem;
+  font-weight: 600;
+}
+section.banner .banner-content h1 {
+  font-size: 5rem;
+  font-weight: 800;
+  color: var(--secondary);
+}
+section.banner .banner-content p {
+  margin: 1rem 0;
+}
+section.banner .banner-content button {
+  margin-top: 1.3rem;
+  margin-right: 1rem;
+}
+section.banner .banner-img img {
+  height: 450px;
+}
