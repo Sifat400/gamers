@@ -73,11 +73,17 @@ body {
 .flex-1 {
   flex: 1;
 }
+.flex-wrap {
+  flex-wrap: wrap;
+}
 .gap-60 {
   gap: 60px;
 }
 .gap-24 {
   gap: 24px;
+}
+.gap-13 {
+  gap: 13px;
 }
 
 .btn {
@@ -107,6 +113,15 @@ body {
   color: var(--secondary);
   border: 1px solid var(--secondary);
 }
+.btn-ternary {
+  background-color: var(--heaven);
+  color: var(--footer);
+  padding: 10px;
+}
+.btn-ternary:hover {
+  color: var(--primary);
+  border: 1px solid var(--primary);
+}
 
 .align-left {
   text-align: left;
@@ -134,7 +149,7 @@ body {
   line-height: 25px;
 }
 section {
-  padding: 3rem 0;
+  padding: 4rem 0;
 }
 
 /* Nav Section Start */
@@ -232,6 +247,7 @@ section.online-games .card-wrapper img {
 
 .card-img:hover img {
   transform: scale(1.1);
+  border: 1px solid var(--primary);
 }
 
 .overlay {
@@ -250,6 +266,7 @@ section.online-games .card-wrapper img {
   color: #fff;
   opacity: 0;
   transition: opacity 0.3s ease;
+  border: 2px solid var(--primary);
 }
 
 .card-img:hover .overlay {
@@ -273,6 +290,7 @@ section.online-games .card-wrapper img {
 /* Section Play-Game Starts */
 section.play-game .play-game-wrapper .play-game-img {
   position: relative;
+  margin-bottom: 4rem;
 }
 section.play-game .play-game-wrapper .play-game-img img:first-child {
   width: 90%;
@@ -288,6 +306,11 @@ section.play-game .play-game-wrapper .play-game-content {
   margin-left: 150px;
 }
 /* Section Play-Game End */
+
+/* Section Games Catergory Starts */
+section.games-catergory img {
+  width: 100px;
+}
 
 /* Footer Starts */
 footer {
